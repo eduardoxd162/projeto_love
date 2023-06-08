@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: "Netflix Sans";
+    src: url(Fontes/NetflixSans-Bold.otf) format(opentype);
+    font-size: 2em;
+}
+@font-face {
+    font-family: "Netflix Sans Regular";
+    src: url(Fontes/NetflixSans-Regular.otf) format(opentype);
+    font-size: 2em
+}
+@font-face {
+    font-family: "Netflix Sans light";
+    src: url(Fontes/NetflixSans-Light.otf) format(opentype);
+}
+@font-face {
+    font-family: "Netflix logo";
+    src: url(Fontes/BebasNeue-Regular.otf);
+}
+:root {
+    --cor_fundo: #141414;
+    --cor_letras: #b4b4b4;
+    --cor_h1: #ffffff;
+    --cor_logo: #e70000;
+    --fonte-padrão: "Netflix Sans light", "Netflix Sans Regular", Arial;
+    --fonte_logo:"Netflix logo" ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor_fundo);
+    font-family: var(--fonte-padrão);
+    padding: 0px 15px 0px 15px;
+    min-width: 300px;
+}
+nav{
+    top: 0px;
+    height: auto;
+}
+nav > a{
+    color: var(--cor_letras);
+    text-decoration: none;
+}
+.logo{
+    font-family: var(--fonte_logo);
+    color: var(--cor_logo);
+    font-size: 2em;
+}
+.lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.caixa_filme{
+    margin: 0;
+    height: auto;
+    margin-right: -25px;
+    padding: 5px;
+}
+.filme{
+    width: 80%;
+    border-radius: 15px;
+}
+h2{
+    color: var(--cor_h1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.dudinha{
+    text-align: center;
+}

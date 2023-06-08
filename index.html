@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="shortcut icon" href="imagem_index/favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: "Netflix Sans";
+            src: url(Fontes/NetflixSans-Bold.otf) format(opentype);
+            font-size: 2em;
+        }
+        @font-face {
+            font-family: "Netflix Sans Regular";
+            src: url(Fontes/NetflixSans-Regular.otf) format(opentype);
+            font-size: 2em
+        }
+        @font-face {
+            font-family: "Netflix Sans light";
+            src: url(Fontes/NetflixSans-Light.otf) format(opentype);
+        }
+        :root {
+            --cor_fundo: #141414;
+            --cor_letras: #b4b4b4;
+            --cor_h1: #ffffff;
+            --fonte-padrão: "Netflix Sans light", "Netflix Sans Regular", Arial;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: var(--fonte-padrão);
+            font-weight: 1em;
+            background-color: var(--cor_fundo);
+            color: var(--cor_letras);
+
+        }
+        header{
+            height: 200px;
+            background-image: radial-gradient();
+        }
+        main{
+            margin: auto;
+            min-width: 300;
+            
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            color: var(--cor_h1);
+        }
+        ul{
+    
+            margin: auto;
+            list-style-type: none;
+        }
+        .foto_perfil{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .foto_perfil:hover{
+            width: 80%;
+            transition-duration: 0.8s;
+        }
+        .foto_perfil:active{
+            box-shadow: 0px 0px 0px 4px #ffffff;
+            transition-duration: 0s;
+        }
+        .profile{
+           max-width: 300px;
+           max-height: 300px;
+           min-width: 0;
+           padding: 20px;
+           text-align: center;
+        }
+        .profiles{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Quem está assistindo?</h1>
+        <section>
+            <ul class="profiles">
+            <li><div class="profile">
+            <a href="menu.html" target="_self" rel="next"><img class="foto_perfil" src="imagem_index/gatos.png" alt="perfil 1"></a>
+            <h2>Edu e Priscila</h2>
+            </div></li>
+            <li><div class="profile">
+                <a href="duda.html" target="_self" rel="next"><img class="foto_perfil" src="imagem_index/Dudinha.jpg" alt="stt"></a>
+                <h2>Dudinha</h2>
+            </div></li>
+
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
